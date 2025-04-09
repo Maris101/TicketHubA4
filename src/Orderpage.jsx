@@ -1,6 +1,6 @@
 import { useLocation } from 'react-router-dom';
 import { useState } from "react";
-import './OrderPage.css';
+import './Orderpage.css';
 
 function OrderPage() {
   // Use useLocation to get the current URL and query parameters
