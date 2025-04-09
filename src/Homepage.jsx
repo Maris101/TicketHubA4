@@ -1,7 +1,7 @@
 // src/components/HomePage.js
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './HomePage.css';
+import './Homepage.css';
 
 function HomePage() {
   const options = [
