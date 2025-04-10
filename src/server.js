@@ -9,8 +9,8 @@ app.use(cors()); // Enable CORS
 
 // Database connection configuration
 const dbConfig = {
-  user: 'nsccadmin',
-  password: 'Maris472@gmail',
+  user: 'user',
+  password: 'password',
   server: 'nscc-w0468748-mssql-server.database.windows.net',
   database: 'nscc-w0468748-mssql-server.database.windows.net',
   options: {
