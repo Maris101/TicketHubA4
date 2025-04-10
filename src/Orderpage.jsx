@@ -157,17 +157,19 @@ function OrderPage() {
       };
 
       try {
+        const json = JSON.stringify(formData);
+        console.log('Form data:', json); 
         const response = await fetch('https://nscc-w0468748-tickethuba3-hkhqayfmh9eufabh.canadacentral-01.azurewebsites.net/api/tickets', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify(formData), // Convert form data to JSON
+          body: json // Convert form data to JSON
         });
 
         if (response.ok) {
-          const result = await response.json();
-          alert(result.message || 'Order submitted successfully!');
+         // const result = await response.json();
+          alert('Order submitted successfully!');
         } else {
           const errorData = await response.json();
           alert(errorData.message || 'Failed to submit the form. Please try again.');
