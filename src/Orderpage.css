@@ -1,21 +1,19 @@
-/* src/components/OrderPage.css */
-
 .order-container {
     text-align: center;
     padding: 20px;
   }
 
-  /* Styling for the form */
+  
 form {
-  width: 40%;  /* Reduced the width of the form */
-  margin: 0 auto; /* Center the form on the page */
+  width: 40%;  
+  margin: 0 auto; 
   margin-top: 50px;
   text-align: left;
   flex-direction: column;
-  gap: 15px; /* Adds space between the input fields */
+  gap: 15px; 
 }
 
-/* Style for individual form labels */
+
 label {
   font-weight: bold;
   font-size: 16px;
@@ -23,24 +21,24 @@ label {
   margin-bottom: 5px;
 }
 
-/* Style for the form inputs */
+
 input {
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ddd;
   border-radius: 4px;
   width: 100%;
-  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  box-sizing: border-box; 
 }
 
-/* Error message styling */
+
 .error {
   color: red;
   font-size: 12px;
   margin-top: 5px;
 }
 
-/* Submit button styling */
+
 button {
   padding: 12px;
   font-size: 16px;
@@ -62,16 +60,16 @@ button:focus {
   outline: none;
 }
 
-/* Add some margin to form fields */
+
 input[type="text"], input[type="number"] {
-  margin-bottom: 10px; /* Adds space below each input */
+  margin-bottom: 10px; 
 }
 
 button[type="submit"] {
-  margin-top: 20px; /* Adds space above the submit button */
+  margin-top: 20px; 
 }
 
-/* Styling for individual form fields */
+
 form label, form input {
   display: block;
   width: 100%;

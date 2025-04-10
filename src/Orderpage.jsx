@@ -1,15 +1,20 @@
 import { useLocation } from 'react-router-dom';
 import { useState } from "react";
 import './Orderpage.css';
+import { useEffect } from 'react'; 
 
 function OrderPage() {
-  // Use useLocation to get the current URL and query parameters
+
   const location = useLocation();
   const searchParams = new URLSearchParams(location.search);
   const concertId = searchParams.get('concertId'); // Get the concertId from the query parameter
   const eventName = decodeURIComponent(location.pathname.split('/')[2]); // Decode the event name to handle spaces
 
-  // State variables for form fields (with mock default values from C#)
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
